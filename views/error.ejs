@@ -1,0 +1,19 @@
+<% layout("layouts/boilerplate") %>
+<div class="row">
+  <div class="col-6 offset-3">
+    <div class="alert alert-danger" role="alert">
+      <h4 class="alert-heading"><%= err.message %></h4>
+      <% if(process.env.NODE_ENV !== "production") {%>
+      <p><%= err.stack %></p>
+      <% } %>
+      <hr />
+      <p class="mb-0 text-muted">
+        Oh Dear! Sorry about that error. Forward me with a screenshot via email
+        on
+        <a class="nav-link" href="mailto:shellfish.developer@gmail.com"
+          ><strong>Tamal Biswas</strong></a
+        >
+      </p>
+    </div>
+  </div>
+</div>
